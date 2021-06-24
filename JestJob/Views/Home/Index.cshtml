@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Person>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">نام</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            @foreach (var item in Model)
+	{<tr>
+    <td>@item.FullName</td>
+</tr>
+    }
+
+
+    </tbody>
+</table>
